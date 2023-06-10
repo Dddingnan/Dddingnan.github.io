@@ -1,0 +1,352 @@
+:root {
+    --main: #5c4d4d;
+    --white: #f2f1e7;
+    --lightBrown: #915b4a;
+    --darkBrown: #a96851;
+    --hyperlink: #a7a3ff;
+    --lightOrange: #FED8B1;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    height: 80px;
+    background-color: var(--main);
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+}
+
+nav a {
+    color: var(--white);
+    font-size: 23px;
+    text-decoration: none;
+    padding: 0px 20px 25px 20px;
+    font-style: oblique;
+}
+
+nav a:hover  {
+    color: var(--lightBrown);
+}
+
+main {
+    background-color: var(--darkBrown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 130px);
+    min-height: calc(100vh - 130px);
+}
+
+main h1 {
+    color: var(--white);
+    margin: 15px 0px 0px 0px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+footer {
+    height: 50px;
+    background-color: var(--main);
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--white);
+}
+
+aside {
+    width: 80%;
+}
+
+section {
+    width: 80%;
+    height: 100%;
+}
+
+hr {
+    width: 80%;
+    height: 100%;
+}
+
+#errors {
+    color: var(--lightOrange);
+    margin-top: 10px;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+aside h2 {
+    color: var(--white);
+    font-style: oblique;
+}
+
+aside p {
+    color: var(--white);
+    font-size: 22px;
+    font-family: "Garamond", Times, serif;
+    margin: 5px;
+}
+
+section h2 {
+    color: var(--white);
+    font-family: "Garamond", Times, serif;
+    margin-top: 30px;
+}
+
+section h3 {
+    color: var(--white);
+    font-family: "Garamond", Times, serif;
+    text-decoration: underline;
+}
+
+#submitButton {
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: var(--hyperlink);
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#submitButton:hover {
+    color: var(--hyperlink);
+    background-color: var(--darkBrown);
+}
+
+#resetButton {
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: var(--white);
+    color: var(--lightBrown);
+    cursor: pointer;
+    transition: color 0.5s ease, background-color 0.5s ease;
+
+}
+
+#resetButton:hover {
+    color: var(--white);
+    background-color: var(--darkBrown);
+}
+
+section article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 18px;
+    color: var(--lightOrange);
+}
+
+form input[type=text] {
+    font-size: 16px;
+    color: var(--darkBrown);
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: var(--white);
+    margin: 10px;
+}
+
+form input[type=radio] {
+    width: 100px;
+    height: 22px;
+    margin: 10px 0px;
+}
+
+form input[type=checkbox] {
+    width: 100px;
+    height: 22px;
+    margin: 10px 0px;
+}
+
+#buttonWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+/* Media query for small phones */ 
+@media only screen and (min-width : 320px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        height: 100%;
+    }
+    nav a {
+        font-size: 14px;
+        padding: 3px;
+    }
+    main h1 {
+        font-size: 17px;
+        color: var(--white);
+        margin: 15px 0px 0px 0px;
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    footer p {
+        font-size: 13px;
+    }
+}
+
+
+/* Media query for smartphones */
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        height: 100%;
+    }
+    nav a {
+        font-size: 15px;
+        padding: 10px;
+    }
+    main h1 {
+        font-size: 17px;
+        color: var(--white);
+        margin: 15px 0px 0px 0px;
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    footer p {
+        font-size: 13px;
+    }
+
+    aside h2 {
+        font-size: 21px;
+    }
+    aside p {
+        font-size: 20px;
+    }
+    section h2 {
+        font-size: 21px;
+    }
+    section article h3 {
+        font-size: 19px;
+    }
+}
+
+
+/* Media query for tablets */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    nav a {
+        color: var(--white);
+        font-size: 23px;
+        text-decoration: none;
+        padding: 0px 20px 25px 20px;
+        font-style: oblique;
+    }
+
+    aside {
+        width: 100%;
+        height: 100%;
+    }
+    
+    section {
+        width: 100%;
+        height: 100%;
+    }
+    
+    hr {
+        width: 100%;
+        height: 100%;
+    }
+    footer p {
+        font-size: 16px;
+    }
+  }
+
+
+/* Media query for laptops */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav a {
+        color: var(--white);
+        font-size: 23px;
+        text-decoration: none;
+        padding: 0px 20px 25px 20px;
+        font-style: oblique;
+    }
+    
+    main h1 {
+        font-size: 23px;
+        color: var(--white);
+        margin: 15px 0px 0px 0px;
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
+
+/* Media query for desktop computers */
+@media only screen and (min-width: 1024px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav a {
+        color: var(--white);
+        font-size: 23px;
+        text-decoration: none;
+        padding: 0px 20px 25px 20px;
+        font-style: oblique;
+    }
+    
+    main h1 {
+        font-size: 23px;
+        color: var(--white);
+        margin: 15px 0px 0px 0px;
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    
+    footer p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/global.css">
+    <script src="./javascript/index.js"></script>
+    <title>CS 601 - Dingnan</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Assignment 4</a>
+        </nav>
+    </header>
+    <main>
+        <h1>CS 601 - Assignment 4</h1>
+        <section>
+            <h2>Welcome, user!</h2>
+            <article>
+                <h3>Form</h3>
+                <form id="myForm" action="https://cs601.bu-course-examples.com/hw4/380a98f5-5191-496f-8aa1-7acc1da83cc5"
+                    method="POST">
+                    <label for="firstName">First Name: </label><br>
+                    <input type="text" id="firstName" name="firstName" required><br>
+                    <label for="lastName">Last Name: </label><br>
+                    <input type="text" id="lastName" name="lastName" required><br>
+                    <label for="facilitator">Facilitator: </label><br>
+                    <input type="text" id="facilitator" name="facilitator" required><br>
+                    <label>Pet:</label><br>
+                    <input type="radio" id="dog" name="options" value="dog">
+                    <label for="dog">Dog</label><br>
+                    <input type="radio" id="cat" name="options" value="cat">
+                    <label for="cat">Cat</label><br>
+                    <label>Interests:</label><br>
+                    <input type="checkbox" id="music" name="music" value="music">
+                    <label for="music">Music</label><br>
+                    <input type="checkbox" id="art" name="art" value="art">
+                    <label for="art">Art</label><br>
+                    <input type="checkbox" id="travel" name="travel" value="travel">
+                    <label for="travel">Travel</label><br>
+                    <input type="checkbox" id="reading" name="reading" value="reading">
+                    <label for="reading">Reading</label><br>
+                    <div id="buttonWrap">
+                        <button id="submitButton" type="submit">Submit</button>
+                        <button id="resetButton" type="button" onclick="handleReset()">Reset</button>
+                    </div>
+                </form>
+                <div id="errors"></div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy;2023. Dingnan Hsu. Open Source. Boston University
+        </p>
+    </footer>
+</body>
+
+</html>
